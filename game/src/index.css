@@ -1,0 +1,19 @@
+#game {
+    height: 300px;
+    width: 700px;
+    background: #ffb7c6;
+}
+
+#hero {
+    height:250px;
+    width:250px;
+    background: rgba(0, 0, 0, 0.34);
+    float:left;
+}
+
+#evil {
+    height:250px;
+    width:250px;
+    background: #FF0000;
+    float:right;
+}
