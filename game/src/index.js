@@ -8,25 +8,54 @@ class Hero extends React.Component {
         super(props);
         this.state = {
             picture: 3,
+            lvl: 1,
+            hp: 100,
         };
     }
+    render() {
+        return (
+            <div>
+                <div><img src={"http://pngimg.com/uploads/armour/armour_PNG41.png"} width={140} alt="hero"/></div>
+                <div>lvl: {this.state.lvl}</div>
+                <div>hp: {this.state.hp}</div>
+            </div>
+        )
+    }
 }
+
+class Evil extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            picture: 3,
+            lvl: 1,
+            hp: 100,
+        };
+    }
+    render() {
+        return (
+            <div>
+                <div><img src={"http://pngimg.com/uploads/armour/armour_PNG41.png"} width={140} alt="hero"/></div>
+                <div>lvl: {this.state.lvl}</div>
+                <div>hp: {this.state.hp}</div>
+            </div>
+        )
+    }
+}
+
 
 class Game extends React.Component {
     render() {
         return (
             <div id="game">
                 <div id="hero">
-                    <div><img src={"http://pngimg.com/uploads/armour/armour_PNG41.png"} width={150} alt="hero"/></div>
-                    Suka
-
+                    <Hero/>
                 </div>
                 <div id="evil">
-                    Hello
+                    <Evil/>
                 </div>
                 <div className="game-info">
-                    <div>{/* status */}</div>
-                    <ol>{/* TODO */}</ol>
+                    <button onClick={}>But</button>
                 </div>
             </div>
         );
